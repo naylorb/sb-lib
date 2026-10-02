@@ -1,0 +1,10 @@
+name: "rw-nested-bad"
+on:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  inner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: naylorb/sb-lib/actions/comp-bad@baa6c7e5e1b3e8d80b696869d93adff6eb36a859

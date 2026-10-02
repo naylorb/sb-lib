@@ -1,0 +1,10 @@
+name: "rw-dollar-nested"
+on:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  inner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: $/actions/comp-dollar
