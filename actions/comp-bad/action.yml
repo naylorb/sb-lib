@@ -1,0 +1,10 @@
+name: comp-bad
+description: Composite whose nested ref is a tag (not pinned)
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "comp-bad start"
+    - uses: actions/checkout@v4
+      with:
+        path: nested-bad

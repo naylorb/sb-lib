@@ -1,0 +1,8 @@
+name: comp-dollar
+description: Composite that calls comp-good with the dollar-self form
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "comp-dollar start"
+    - uses: $/actions/comp-good
